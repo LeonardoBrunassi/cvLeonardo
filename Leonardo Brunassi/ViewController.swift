@@ -20,6 +20,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
+        //self.navigationController?.hidesBarsOnTap = true
+        //self.navigationController?.hidesBarsWhenKeyboardAppears = true
         //Deixando a imagem de perfil redonda.
         imageProfile.layer.borderColor = UIColor.whiteColor().CGColor
         imageProfile.layer.cornerRadius = 74
@@ -30,6 +32,11 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        //Deixando a navBar invisível.
+        self.navigationController?.navigationBarHidden = true
     }
 
 

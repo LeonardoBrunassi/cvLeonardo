@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>67A5E980-5E3B-4DE8-8043-5D9E0A627BB5</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Leonardo Brunassi</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57892CC972ECF04D483378F3E7CB46A63488C654</key>
+		<string>https://github.com/LeonardoBrunassi/cvLeonardo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Leonardo Brunassi.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57892CC972ECF04D483378F3E7CB46A63488C654</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/LeonardoBrunassi/cvLeonardo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57892CC972ECF04D483378F3E7CB46A63488C654</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57892CC972ECF04D483378F3E7CB46A63488C654</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Leonardo%20Brunassi</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B21425281ADECE8100D17198 /* profileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21425271ADECE8100D17198 /* profileViewController.swift */; };
 		B27EDCA21ADEB96F0092EAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */; };
 		B27EDCA41ADEB96F0092EAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */; };
 		B27EDCA71ADEB96F0092EAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDCA51ADEB96F0092EAF4 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B21425271ADECE8100D17198 /* profileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profileViewController.swift; sourceTree = "<group>"; };
 		B27EDC9C1ADEB96F0092EAF4 /* Leonardo Brunassi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leonardo Brunassi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27EDCA01ADEB96F0092EAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */,
 				B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */,
+				B21425271ADECE8100D17198 /* profileViewController.swift */,
 				B27EDCA51ADEB96F0092EAF4 /* Main.storyboard */,
 				B27EDCA81ADEB96F0092EAF4 /* Images.xcassets */,
 				B27EDCAA1ADEB96F0092EAF4 /* LaunchScreen.xib */,
@@ -214,6 +217,7 @@
 			files = (
 				B27EDCA41ADEB96F0092EAF4 /* ViewController.swift in Sources */,
 				B27EDCA21ADEB96F0092EAF4 /* AppDelegate.swift in Sources */,
+				B21425281ADECE8100D17198 /* profileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +413,7 @@
 				B27EDCBD1ADEB96F0092EAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B27EDCBE1ADEB96F0092EAF4 /* Build configuration list for PBXNativeTarget "Leonardo BrunassiTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				B27EDCC01ADEB96F0092EAF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
