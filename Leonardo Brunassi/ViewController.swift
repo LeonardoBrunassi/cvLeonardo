@@ -10,9 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var imageProfile: UIButton!
     @IBOutlet weak var aboutMeLabel: UILabel!
+    @IBOutlet weak var imageXcode: UIButton!
+    @IBOutlet weak var experiencesLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -20,16 +21,19 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        //Definindo uma fonte para o meu nome.
-        nameLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 20)
-        //Definindo uma font para o About Me.
+
+        //Definindo uma font para as labels.
         aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
-        
+        experiencesLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         
         //Deixando a imagem de perfil redonda.
         imageProfile.layer.borderColor = UIColor.whiteColor().CGColor
-        imageProfile.layer.cornerRadius = 59
+        imageProfile.layer.cornerRadius = 52
         imageProfile.clipsToBounds = true
+        
+        imageXcode.layer.borderColor = UIColor.whiteColor().CGColor
+        imageXcode.layer.cornerRadius = 52
+        imageXcode.clipsToBounds = true
 
     }
 
@@ -40,7 +44,7 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         //Deixando a navBar invisível.
-        self.navigationController?.navigationBarHidden = true
+        self.navigationController?.navigationBarHidden = false
     }
 
 
