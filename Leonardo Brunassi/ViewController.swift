@@ -20,11 +20,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        //self.navigationController?.hidesBarsOnTap = true
-        //self.navigationController?.hidesBarsWhenKeyboardAppears = true
+        //Definindo uma fonte para o meu nome.
+        nameLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 20)
+        //Definindo uma font para o About Me.
+        aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
+        
+        
         //Deixando a imagem de perfil redonda.
         imageProfile.layer.borderColor = UIColor.whiteColor().CGColor
-        imageProfile.layer.cornerRadius = 74
+        imageProfile.layer.cornerRadius = 59
         imageProfile.clipsToBounds = true
 
     }

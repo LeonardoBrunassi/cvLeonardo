@@ -10,8 +10,16 @@ import UIKit
 
 class profileViewController: UIViewController {
 
+    
+    @IBOutlet weak var textAboutMeLabel: UILabel!
+    
+    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textAboutMeLabel.text = "Meu nome é Leonardo Brunassi, tenho 22 anos e sou de Marília-SP. \n\nAtualmente moro na cidade de São Paulo e estou cursando o quinto semestre de Ciência da Computação na Universidade Presbiteriana Mackenzie."
+        textAboutMeLabel.font = UIFont (name: "TimesNewRomanPSMT", size: 15)
 
         // Do any additional setup after loading the view.
     }
