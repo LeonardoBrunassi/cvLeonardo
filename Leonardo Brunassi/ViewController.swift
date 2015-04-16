@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var aboutMeLabel: UILabel!
     @IBOutlet weak var imageXcode: UIButton!
     @IBOutlet weak var experiencesLabel: UILabel!
+    @IBOutlet weak var imageApple: UIButton!
+    @IBOutlet weak var futureLabel: UILabel!
+    @IBOutlet weak var imageEvents: UIButton!
+    @IBOutlet weak var eventsLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -25,6 +29,8 @@ class ViewController: UIViewController {
         //Definindo uma font para as labels.
         aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         experiencesLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
+        futureLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
+        eventsLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         
         //Deixando a imagem de perfil redonda.
         imageProfile.layer.borderColor = UIColor.whiteColor().CGColor
@@ -34,6 +40,14 @@ class ViewController: UIViewController {
         imageXcode.layer.borderColor = UIColor.whiteColor().CGColor
         imageXcode.layer.cornerRadius = 52
         imageXcode.clipsToBounds = true
+        
+        imageApple.layer.borderColor = UIColor.whiteColor().CGColor
+        imageApple.layer.cornerRadius = 52
+        imageApple.clipsToBounds = true
+        
+        imageEvents.layer.borderColor = UIColor.whiteColor().CGColor
+        imageEvents.layer.cornerRadius = 52
+        imageEvents.clipsToBounds = true
 
     }
 
