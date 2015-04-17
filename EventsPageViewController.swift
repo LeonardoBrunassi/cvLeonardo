@@ -18,8 +18,8 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "Explore", "Today Widget")
-        self.pageImages = NSArray(objects: "eventos", "logoApple")
+        self.pageTitles = NSArray(objects: "IT4CIO", "ITMIDIA", "GARTNER")
+        self.pageImages = NSArray(objects: "it4cio", "itmidia", "gartner")
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
@@ -30,7 +30,7 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         
         self.pageViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
         
-        self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
+        //self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
         
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
