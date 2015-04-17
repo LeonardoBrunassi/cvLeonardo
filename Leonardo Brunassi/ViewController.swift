@@ -22,6 +22,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.navigationController?.interactivePopGestureRecognizer.enabled = false
         // Do any additional setup after loading the view, typically from a nib.
         
         

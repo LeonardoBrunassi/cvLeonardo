@@ -34,6 +34,10 @@ class profileViewController: UIViewController {
         self.navigationController?.navigationBarHidden = false
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer.enabled = true
+    }
+    
     
     
 

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventsPageViewController: UIViewController, UIPageViewControllerDataSource {
+class EventsPageViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController!
     var pageTitles: NSArray!
@@ -24,6 +24,14 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
         self.pageViewController.dataSource = self
+        self.pageViewController.delegate = self
+        
+        //Cores dos indicadores de páginas
+        let pageControl = UIPageControl.appearance()
+        pageControl.backgroundColor = UIColor.clearColor()
+        //pageControl.pageIndicatorTintColor = UIColor.redColor()
+        //pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+
         
         var startVC = self.viewControllerAtIndex(0) as EventsViewController
         var viewControllers = NSArray (object: startVC)
@@ -35,6 +43,7 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         self.addChildViewController(self.pageViewController)
         self.view.addSubview(self.pageViewController.view)
         self.pageViewController.didMoveToParentViewController(self)
+        
         
         
     

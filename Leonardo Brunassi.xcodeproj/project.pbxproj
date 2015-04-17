@@ -128,8 +128,8 @@
 				B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */,
 				B21425271ADECE8100D17198 /* ProfileViewController.swift */,
 				B2AA4E8F1ADEF5E40011A231 /* ExperiencesViewController.swift */,
-				B2AA4E931AE020190011A231 /* EventsViewController.swift */,
 				B2AA4E911ADEFA330011A231 /* FutureViewController.swift */,
+				B2AA4E931AE020190011A231 /* EventsViewController.swift */,
 				B2C284951AE036130076D645 /* EventsPageViewController.swift */,
 			);
 			name = "View Controllers";

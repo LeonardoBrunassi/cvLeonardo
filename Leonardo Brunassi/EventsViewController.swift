@@ -12,14 +12,13 @@ class EventsViewController: UIViewController {
     
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
-    
+
     var pageIndex: Int!
     var titleText: String!
     var imageFile: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         self.logoImage.image = UIImage (named: self.imageFile)
         self.textLabel.text = self.titleText
@@ -31,7 +30,13 @@ class EventsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewWillAppear(animated: Bool) {
+        //self.navigationController?.navigationBarHidden = true
+    }
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer.enabled = false
+    }
     /*
     // MARK: - Navigation
 

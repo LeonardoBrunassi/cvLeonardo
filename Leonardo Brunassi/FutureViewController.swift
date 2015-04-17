@@ -21,6 +21,9 @@ class FutureViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer.enabled = true
+    }
 
     /*
     // MARK: - Navigation
