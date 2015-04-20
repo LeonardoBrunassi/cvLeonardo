@@ -12,16 +12,19 @@ class EventsViewController: UIViewController {
     
     @IBOutlet weak var logoImage: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var eventsImage: UIImageView!
 
     var pageIndex: Int!
     var titleText: String!
     var imageFile: String!
+    var imageEvents: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.logoImage.image = UIImage (named: self.imageFile)
-        self.textLabel.text = self.titleText
+        //self.textLabel.text = self.titleText
+        self.eventsImage.image = UIImage (named: self.imageEvents)
         // Do any additional setup after loading the view.
     }
     

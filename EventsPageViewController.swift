@@ -11,15 +11,21 @@ import UIKit
 class EventsPageViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController!
-    var pageTitles: NSArray!
+    //var pageTitles: NSArray!
     var pageImages: NSArray!
+    var pageEventsImage: NSArray!
+    
+    let pinchRec = UIPinchGestureRecognizer()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "IT4CIO", "ITMIDIA", "GARTNER")
+        pinchRec.addTarget(self, action: "pinchedView:")
+        
+        //self.pageTitles = NSArray(objects: "IT4CIO", "ITMIDIA", "GARTNER")
         self.pageImages = NSArray(objects: "it4cio", "itmidia", "gartner")
+        self.pageEventsImage = NSArray (objects: "it4CIO2014", "itMidia2014", "gartner2014")
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
         self.pageViewController.dataSource = self
@@ -53,14 +59,16 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
     
     
     func viewControllerAtIndex(index: Int) -> EventsViewController {
-        if((self.pageTitles.count == 0) || index >= self.pageTitles.count) {
+        if((self.pageEventsImage.count == 0) || index >= self.pageEventsImage.count) {
             return EventsViewController()
         }
     
-        var vc: EventsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("EventsViewController") as! EventsViewController
+        var vc: EventsViewController =
+        self.storyboard?.instantiateViewControllerWithIdentifier("EventsViewController") as! EventsViewController
         
         vc.imageFile = self.pageImages[index] as! String
-        vc.titleText = self.pageTitles[index] as! String
+        //vc.titleText = self.pageTitles[index] as! String
+        vc.imageEvents = self.pageEventsImage[index] as! String
         vc.pageIndex = index
         
         return vc
@@ -90,7 +98,7 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         
         index++
         
-        if(index == self.pageTitles.count) {
+        if(index == self.pageEventsImage.count) {
             return nil
         }
         
@@ -98,11 +106,16 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
     }
     
     func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
-        return self.pageTitles.count
+        return self.pageEventsImage.count
     }
     
     func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
         return 0
+    }
+    
+    func pinchedView (sender:UIPinchGestureRecognizer) {
+        self.view.transform = CGAffineTransformScale(self.view.transform, sender.scale, sender.scale)
+        sender.scale = 1
     }
 
     /*
