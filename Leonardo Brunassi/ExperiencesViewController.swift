@@ -9,10 +9,22 @@
 import UIKit
 
 class ExperiencesViewController: UIViewController {
+    
+    @IBOutlet weak var companyLogo: UIImageView!
+    @IBOutlet weak var companyName: UILabel!
+    @IBOutlet weak var ibmText: UILabel!
+    
+    var pageIndex: Int!
+    var titleText: String!
+    var imageFile: String!
+    var textIbm: String!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.companyLogo.image = UIImage (named: self.imageFile)
+        self.companyName.text = self.titleText
+        self.ibmText.text = self.textIbm
         // Do any additional setup after loading the view.
     }
 

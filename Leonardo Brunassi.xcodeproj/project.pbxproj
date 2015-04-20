@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B21425281ADECE8100D17198 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21425271ADECE8100D17198 /* ProfileViewController.swift */; };
+		B2343A511AE18C470001E499 /* ExperiencesPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2343A501AE18C470001E499 /* ExperiencesPageViewController.swift */; };
 		B27EDCA21ADEB96F0092EAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */; };
 		B27EDCA41ADEB96F0092EAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */; };
 		B27EDCA71ADEB96F0092EAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDCA51ADEB96F0092EAF4 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		B21425271ADECE8100D17198 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Leonardo Brunassi/ProfileViewController.swift"; sourceTree = "<group>"; };
+		B2343A501AE18C470001E499 /* ExperiencesPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExperiencesPageViewController.swift; sourceTree = "<group>"; };
 		B27EDC9C1ADEB96F0092EAF4 /* Leonardo Brunassi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leonardo Brunassi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27EDCA01ADEB96F0092EAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */,
 				B21425271ADECE8100D17198 /* ProfileViewController.swift */,
 				B2AA4E8F1ADEF5E40011A231 /* ExperiencesViewController.swift */,
+				B2343A501AE18C470001E499 /* ExperiencesPageViewController.swift */,
 				B2AA4E911ADEFA330011A231 /* FutureViewController.swift */,
 				B2AA4E931AE020190011A231 /* EventsViewController.swift */,
 				B2C284951AE036130076D645 /* EventsPageViewController.swift */,
@@ -240,6 +243,7 @@
 				B2C284961AE036130076D645 /* EventsPageViewController.swift in Sources */,
 				B27EDCA21ADEB96F0092EAF4 /* AppDelegate.swift in Sources */,
 				B2AA4E921ADEFA330011A231 /* FutureViewController.swift in Sources */,
+				B2343A511AE18C470001E499 /* ExperiencesPageViewController.swift in Sources */,
 				B21425281ADECE8100D17198 /* ProfileViewController.swift in Sources */,
 				B2AA4E941AE020190011A231 /* EventsViewController.swift in Sources */,
 			);
