@@ -12,9 +12,9 @@
 		B27EDCA21ADEB96F0092EAF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */; };
 		B27EDCA41ADEB96F0092EAF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */; };
 		B27EDCA71ADEB96F0092EAF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B27EDCA51ADEB96F0092EAF4 /* Main.storyboard */; };
-		B27EDCA91ADEB96F0092EAF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B27EDCA81ADEB96F0092EAF4 /* Images.xcassets */; };
 		B27EDCAC1ADEB96F0092EAF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B27EDCAA1ADEB96F0092EAF4 /* LaunchScreen.xib */; };
 		B27EDCB81ADEB96F0092EAF4 /* Leonardo_BrunassiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27EDCB71ADEB96F0092EAF4 /* Leonardo_BrunassiTests.swift */; };
+		B29E23EA1AE8387C0043DA57 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29E23E91AE8387C0043DA57 /* Images.xcassets */; };
 		B2AA4E901ADEF5E40011A231 /* ExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA4E8F1ADEF5E40011A231 /* ExperiencesViewController.swift */; };
 		B2AA4E921ADEFA330011A231 /* FutureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA4E911ADEFA330011A231 /* FutureViewController.swift */; };
 		B2AA4E941AE020190011A231 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AA4E931AE020190011A231 /* EventsViewController.swift */; };
@@ -39,11 +39,11 @@
 		B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B27EDCA31ADEB96F0092EAF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "Leonardo Brunassi/ViewController.swift"; sourceTree = "<group>"; };
 		B27EDCA61ADEB96F0092EAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B27EDCA81ADEB96F0092EAF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B27EDCAB1ADEB96F0092EAF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B27EDCB11ADEB96F0092EAF4 /* Leonardo BrunassiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Leonardo BrunassiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27EDCB61ADEB96F0092EAF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B27EDCB71ADEB96F0092EAF4 /* Leonardo_BrunassiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leonardo_BrunassiTests.swift; sourceTree = "<group>"; };
+		B29E23E91AE8387C0043DA57 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B2AA4E8F1ADEF5E40011A231 /* ExperiencesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExperiencesViewController.swift; path = "Leonardo Brunassi/ExperiencesViewController.swift"; sourceTree = "<group>"; };
 		B2AA4E911ADEFA330011A231 /* FutureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FutureViewController.swift; path = "Leonardo Brunassi/FutureViewController.swift"; sourceTree = "<group>"; };
 		B2AA4E931AE020190011A231 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = "Leonardo Brunassi/EventsViewController.swift"; sourceTree = "<group>"; };
@@ -92,7 +92,6 @@
 			children = (
 				B27EDCA11ADEB96F0092EAF4 /* AppDelegate.swift */,
 				B27EDCA51ADEB96F0092EAF4 /* Main.storyboard */,
-				B27EDCA81ADEB96F0092EAF4 /* Images.xcassets */,
 				B27EDCAA1ADEB96F0092EAF4 /* LaunchScreen.xib */,
 				B27EDC9F1ADEB96F0092EAF4 /* Supporting Files */,
 			);
@@ -102,6 +101,7 @@
 		B27EDC9F1ADEB96F0092EAF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B29E23E91AE8387C0043DA57 /* Images.xcassets */,
 				B27EDCA01ADEB96F0092EAF4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -218,9 +218,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B29E23EA1AE8387C0043DA57 /* Images.xcassets in Resources */,
 				B27EDCA71ADEB96F0092EAF4 /* Main.storyboard in Resources */,
 				B27EDCAC1ADEB96F0092EAF4 /* LaunchScreen.xib in Resources */,
-				B27EDCA91ADEB96F0092EAF4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

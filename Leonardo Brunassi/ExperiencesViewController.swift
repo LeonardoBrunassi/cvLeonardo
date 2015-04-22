@@ -34,7 +34,7 @@ class ExperiencesViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        self.navigationController?.interactivePopGestureRecognizer.enabled = true
+        self.navigationController?.interactivePopGestureRecognizer.enabled = false
     }
 
     /*

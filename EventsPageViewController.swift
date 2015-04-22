@@ -20,8 +20,9 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
     
     override func viewDidLoad() {
         super.viewDidLoad()
+      
         
-        pinchRec.addTarget(self, action: "pinchedView:")
+        
         
         //self.pageTitles = NSArray(objects: "IT4CIO", "ITMIDIA", "GARTNER")
         self.pageImages = NSArray(objects: "it4cio", "itmidia", "gartner")
@@ -113,10 +114,7 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         return 0
     }
     
-    func pinchedView (sender:UIPinchGestureRecognizer) {
-        self.view.transform = CGAffineTransformScale(self.view.transform, sender.scale, sender.scale)
-        sender.scale = 1
-    }
+
 
     /*
     // MARK: - Navigation

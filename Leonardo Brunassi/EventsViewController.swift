@@ -11,7 +11,7 @@ import UIKit
 class EventsViewController: UIViewController {
     
     @IBOutlet weak var logoImage: UIImageView!
-    @IBOutlet weak var textLabel: UILabel!
+    //@IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var eventsImage: UIImageView!
 
     var pageIndex: Int!
@@ -19,8 +19,13 @@ class EventsViewController: UIViewController {
     var imageFile: String!
     var imageEvents: String!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //var pinch: UIPinchGestureRecognizer = UIPinchGestureRecognizer(target:self, action: "pinchedView:")
+        //self.view.addGestureRecognizer(pinch)
         
         self.logoImage.image = UIImage (named: self.imageFile)
         //self.textLabel.text = self.titleText
@@ -40,6 +45,14 @@ class EventsViewController: UIViewController {
     override func viewDidAppear(animated: Bool) {
         self.navigationController?.interactivePopGestureRecognizer.enabled = false
     }
+    
+
+
+//    @IBAction func pinchedView(sender: UIPinchGestureRecognizer) {
+//        self.eventsImage.transform = CGAffineTransformScale(self.eventsImage.transform, sender.scale, sender.scale)
+//        sender.scale = 1
+//    }
+    
     /*
     // MARK: - Navigation
 

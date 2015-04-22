@@ -18,8 +18,9 @@ class profileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        textAboutMeLabel.text = "Meu nome é Leonardo Brunassi, tenho 22 anos e sou de Marília-SP. \n\nAtualmente moro na cidade de São Paulo e estou cursando o quinto semestre de Ciência da Computação na Universidade Presbiteriana Mackenzie."
-        textAboutMeLabel.font = UIFont (name: "TimesNewRomanPSMT", size: 15)
+        textAboutMeLabel.text = "Meu nome é Leonardo Brunassi, tenho 22 anos e sou de Marília-SP. \n\nAtualmente moro na cidade de São Paulo e estou cursando o quinto semestre de Ciência da Computação na Universidade Presbiteriana Mackenzie.\n\nVim para São Paulo, pois as oportunidades de trabalho são bem maiores, há excelentes universidades e ótimos cursos, sendo muito importante para meu conhecimento e vida profissional.\n\nVenho aprendendo muito com as experiências que tenho passado, principalmente a de morar sozinho, pois foi algo que me fez crescer e amadurecer.\n\nTenho como hobbies jogar baralho com amigos, assistir filmes e sair aos finais de semana. Costumo voltar para minha cidade natal pelo menos duas vezes por mês para visitar meus pais e meu irmão.\n\nSonho em fazer um intercâmbio e trabalhar fora do país para conhecer diferentes culturas e aperfeiçoar o meu inglês, alem de ser muito bom para meu curriculo."
+        
+        textAboutMeLabel.font = UIFont (name: "TimesNewRomanPSMT", size: 17)
 
         // Do any additional setup after loading the view.
     }

@@ -108,6 +108,10 @@ class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataS
         return 0
     }
     
+    override func viewDidAppear(animated: Bool) {
+        self.navigationController?.interactivePopGestureRecognizer.enabled = false
+    }
+    
 
     /*
     // MARK: - Navigation
