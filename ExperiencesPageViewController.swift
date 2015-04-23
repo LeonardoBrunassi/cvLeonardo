@@ -18,9 +18,13 @@ class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "","Síntese de Qualificações")
-        self.pageImages = NSArray(objects: "ibm_logo","skill")
-        self.pageText = NSArray (objects: "- Desenvolvimento de uma aplicação WEB para controle de tarefas recebidas à um departamento com inserção, atualização, consulta e deleção em banco de dados utilizando a lingaguem de programação JAVA.\n\n- Suporte a instalação de DB2, Brio e Lotus Notes.\n\n- Suporte a requisição de acessos via UAT (User Administration Tool).\n\n- Desenvolvimento e testes de queries que busquem, filtrem e extraiam informações de um conjunto de dados em tabelas, gerando relatórios para serem entregues a clientes em um período específico.", "")
+        self.pageTitles = NSArray(objects: "(Síntese de Qualificações)","(Experiência Profissional)")
+        self.pageImages = NSArray(objects: "skills","ibm_logo")
+        self.pageText = NSArray (objects: "- Banco de Dados DB2.\n\n- Programação Java.\n\n - Conhecimentos em HTML5, CCS3 e JavaScript.\n\n- Em aprendizado nas linguagens de programação Objective-C e Swift.\n\n- Pacote Office.\n\n - Inglês, CCI Marília-SP.\n\n- Ensino Médio - Colégio Cristo Rei de Marília.\n\n - Cursando Ciência da Computação, MACKENZIE-SP (Terceiro Ano).","- Desenvolvimento de uma aplicação WEB para controle de tarefas recebidas à um departamento com inserção, atualização, consulta e deleção em banco de dados utilizando a lingaguem de programação JAVA.\n\n- Suporte a instalação de DB2, Brio e Lotus Notes.\n\n- Suporte a requisição de acessos via UAT (User Administration Tool).\n\n- Desenvolvimento e testes de queries que busquem, filtrem e extraiam informações de um conjunto de dados em tabelas, gerando relatórios para serem entregues a clientes em um período específico.")
+        
+        
+        
+        
         
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
@@ -29,7 +33,7 @@ class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataS
         
         //Cores dos indicadores de páginas
         let pageControl = UIPageControl.appearance()
-        pageControl.backgroundColor = UIColor (red: (47/255.0), green: (49/255.0), blue: (73/255.0), alpha: 1)
+        pageControl.backgroundColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
         pageControl.pageIndicatorTintColor = UIColor.blackColor()
         pageControl.currentPageIndicatorTintColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         

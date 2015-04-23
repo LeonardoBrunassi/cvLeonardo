@@ -22,8 +22,8 @@ class ExperiencesViewController: UIViewController {
         super.viewDidLoad()
         
         //Background Gradient.
-        let topColor = UIColor (red: (50/255.0), green: (65/255.0), blue: (74/255.0), alpha: 1)
-        let bottomColor = UIColor (red: (47/255.0), green: (49/255.0), blue: (73/255.0), alpha: 1)
+        let topColor = UIColor (red: (219/255.0), green: (39/255.0), blue: (29/255.0), alpha: 1)
+        let bottomColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
         let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
         let gradientLocations: [Float] = [0.0, 1.0]
         
@@ -37,6 +37,7 @@ class ExperiencesViewController: UIViewController {
         
         //Definindo cor da letra.
         descriptionLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        companyName.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         
         self.companyLogo.image = UIImage (named: self.imageFile)
         self.companyName.text = self.titleText

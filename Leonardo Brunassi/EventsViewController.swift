@@ -23,6 +23,18 @@ class EventsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Background Gradient.
+        let topColor = UIColor (red: (219/255.0), green: (39/255.0), blue: (29/255.0), alpha: 1)
+        let bottomColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
+        let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
+        let gradientLocations: [Float] = [0.0, 1.0]
+        
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.colors = gradientColors
+        gradientLayer.locations = gradientLocations
+        
+        gradientLayer.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
         
         //var pinch: UIPinchGestureRecognizer = UIPinchGestureRecognizer(target:self, action: "pinchedView:")
         //self.view.addGestureRecognizer(pinch)

@@ -29,14 +29,16 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         self.pageEventsImage = NSArray (objects: "it4CIO2014", "itMidia2014", "gartner2014")
         self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
+        
+        
         self.pageViewController.dataSource = self
         self.pageViewController.delegate = self
         
         //Cores dos indicadores de páginas
         let pageControl = UIPageControl.appearance()
-        pageControl.backgroundColor = UIColor.clearColor()
-        //pageControl.pageIndicatorTintColor = UIColor.redColor()
-        //pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+        pageControl.backgroundColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
+        pageControl.pageIndicatorTintColor = UIColor.blackColor()
+        pageControl.currentPageIndicatorTintColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
 
         
         var startVC = self.viewControllerAtIndex(0) as EventsViewController

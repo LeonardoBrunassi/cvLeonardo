@@ -167,7 +167,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.18431372549019609" green="0.19215686274509805" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="W05-7h-iHF" secondAttribute="trailing" constant="25" id="53K-87-Dvr">
                                 <variation key="widthClass=compact" constant="40"/>
@@ -350,7 +349,9 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKT-1D-gbM">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="369" id="vU5-N1-jJ5"/>
+                                    <constraint firstAttribute="height" constant="369" id="vU5-N1-jJ5">
+                                        <variation key="widthClass=compact" constant="388"/>
+                                    </constraint>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -373,12 +374,14 @@
                             <constraint firstItem="IKT-1D-gbM" firstAttribute="centerX" secondItem="JjO-Xj-egu" secondAttribute="centerX" id="Jfz-LC-pdi"/>
                             <constraint firstAttribute="centerX" secondItem="jv2-cE-DTC" secondAttribute="centerX" id="Jzf-nU-Ajw"/>
                             <constraint firstAttribute="centerX" secondItem="pNj-na-nkK" secondAttribute="centerX" id="MgJ-Rp-bWr"/>
-                            <constraint firstItem="JjO-Xj-egu" firstAttribute="top" secondItem="jv2-cE-DTC" secondAttribute="bottom" constant="26" id="OfB-cL-1fl"/>
+                            <constraint firstItem="JjO-Xj-egu" firstAttribute="top" secondItem="jv2-cE-DTC" secondAttribute="bottom" constant="26" id="OfB-cL-1fl">
+                                <variation key="widthClass=compact" constant="16"/>
+                            </constraint>
                             <constraint firstItem="YAT-OQ-7gs" firstAttribute="top" secondItem="IKT-1D-gbM" secondAttribute="bottom" constant="8" symbolic="YES" id="SzI-C0-SzN">
-                                <variation key="widthClass=compact" constant="26"/>
+                                <variation key="widthClass=compact" constant="8"/>
                             </constraint>
                             <constraint firstItem="jv2-cE-DTC" firstAttribute="top" secondItem="KnK-wW-ZUr" secondAttribute="bottom" constant="70" id="etA-6d-MEG">
-                                <variation key="widthClass=compact" constant="40"/>
+                                <variation key="widthClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="pNj-na-nkK" firstAttribute="top" secondItem="jv2-cE-DTC" secondAttribute="bottom" constant="17" id="oVx-Jm-bE5"/>
                         </constraints>
@@ -515,7 +518,9 @@
                             <constraint firstItem="BpI-jp-Z4O" firstAttribute="centerX" secondItem="j81-r6-iFk" secondAttribute="centerX" id="M4p-bo-GP6"/>
                             <constraint firstAttribute="centerX" secondItem="j81-r6-iFk" secondAttribute="centerX" id="XqC-Wx-VUl"/>
                             <constraint firstItem="BpI-jp-Z4O" firstAttribute="top" secondItem="j81-r6-iFk" secondAttribute="bottom" constant="19" id="abt-b6-i0Z"/>
-                            <constraint firstItem="BpI-jp-Z4O" firstAttribute="leading" secondItem="Enb-6j-onu" secondAttribute="leadingMargin" constant="-7" id="dts-Ab-2vh"/>
+                            <constraint firstItem="BpI-jp-Z4O" firstAttribute="leading" secondItem="Enb-6j-onu" secondAttribute="leadingMargin" constant="-7" id="dts-Ab-2vh">
+                                <variation key="widthClass=compact" constant="-16"/>
+                            </constraint>
                             <constraint firstItem="BpI-jp-Z4O" firstAttribute="bottom" secondItem="HRc-Ep-SMb" secondAttribute="top" id="q2D-gG-fTm"/>
                         </constraints>
                         <variation key="default">
@@ -659,7 +664,7 @@
                                 <variation key="widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="5ix-NQ-etm" firstAttribute="top" secondItem="v9A-3G-Mbb" secondAttribute="topMargin" id="3Z8-xN-1pc">
-                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=compact" constant="99"/>
                             </constraint>
                             <constraint firstItem="5ix-NQ-etm" firstAttribute="top" secondItem="bB2-Nq-tni" secondAttribute="bottom" id="ORa-7j-gS1"/>
                             <constraint firstItem="5ix-NQ-etm" firstAttribute="trailing" secondItem="v9A-3G-Mbb" secondAttribute="trailingMargin" id="lsO-Rn-9PQ"/>
