@@ -22,10 +22,30 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Background Gradient.
+        let topColor = UIColor (red: (50/255.0), green: (65/255.0), blue: (74/255.0), alpha: 1)
+        let bottomColor = UIColor (red: (47/255.0), green: (49/255.0), blue: (73/255.0), alpha: 1)
+        let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
+        let gradientLocations: [Float] = [0.0, 1.0]
+        
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.colors = gradientColors
+        gradientLayer.locations = gradientLocations
+        
+        gradientLayer.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+
         //self.navigationController?.interactivePopGestureRecognizer.enabled = false
         // Do any additional setup after loading the view, typically from a nib.
         
+        navigationController?.navigationBar.barTintColor = UIColor (red: 245, green: 245, blue: 245, alpha: 1)
         
+        //Defigindo uma cor para as labels.
+        aboutMeLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        experiencesLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        futureLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        eventsLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
 
         //Definindo uma font para as labels.
         aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)

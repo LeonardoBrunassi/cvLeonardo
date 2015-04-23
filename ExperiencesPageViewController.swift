@@ -10,38 +10,42 @@ import UIKit
 
 class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
-    var testeViewController: UIPageViewController!
+    var pageViewController: UIPageViewController!
     var pageTitles: NSArray!
     var pageImages: NSArray!
+    var pageText: NSArray!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "IBM","Síntese de Qualificações")
-        self.pageImages = NSArray(objects: "ibm","skill")
+        self.pageTitles = NSArray(objects: "","Síntese de Qualificações")
+        self.pageImages = NSArray(objects: "ibm_logo","skill")
+        self.pageText = NSArray (objects: "- Desenvolvimento de uma aplicação WEB para controle de tarefas recebidas à um departamento com inserção, atualização, consulta e deleção em banco de dados utilizando a lingaguem de programação JAVA.\n\n- Suporte a instalação de DB2, Brio e Lotus Notes.\n\n- Suporte a requisição de acessos via UAT (User Administration Tool).\n\n- Desenvolvimento e testes de queries que busquem, filtrem e extraiam informações de um conjunto de dados em tabelas, gerando relatórios para serem entregues a clientes em um período específico.", "")
         
-        self.testeViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
+        self.pageViewController = self.storyboard?.instantiateViewControllerWithIdentifier("PageViewController") as! UIPageViewController
         
-        self.testeViewController.dataSource = self
-        self.testeViewController.delegate = self
+        self.pageViewController.dataSource = self
+        self.pageViewController.delegate = self
         
         //Cores dos indicadores de páginas
         let pageControl = UIPageControl.appearance()
-        pageControl.backgroundColor = UIColor.clearColor()
-        //pageControl.pageIndicatorTintColor = UIColor.redColor()
-        //pageControl.currentPageIndicatorTintColor = UIColor.blackColor()
+        pageControl.backgroundColor = UIColor (red: (47/255.0), green: (49/255.0), blue: (73/255.0), alpha: 1)
+        pageControl.pageIndicatorTintColor = UIColor.blackColor()
+        pageControl.currentPageIndicatorTintColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         
         
         var startVC = self.viewControllerAtIndex(0) as ExperiencesViewController
         var viewControllers = NSArray (object: startVC)
         
-        self.testeViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
+
+        
+        self.pageViewController.setViewControllers(viewControllers as [AnyObject], direction: .Forward, animated: true, completion: nil)
         
         //self.pageViewController.view.frame = CGRectMake(0, 30, self.view.frame.width, self.view.frame.size.height - 60)
         
-        self.addChildViewController(self.testeViewController)
-        self.view.addSubview(self.testeViewController.view)
-        self.testeViewController.didMoveToParentViewController(self)
+        self.addChildViewController(self.pageViewController)
+        self.view.addSubview(self.pageViewController.view)
+        self.pageViewController.didMoveToParentViewController(self)
         
         
         
@@ -64,6 +68,7 @@ class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataS
         
         vc.imageFile = self.pageImages[index] as! String
         vc.titleText = self.pageTitles[index] as! String
+        vc.textLabel = self.pageText[index] as! String
         vc.pageIndex = index
         
         return vc
