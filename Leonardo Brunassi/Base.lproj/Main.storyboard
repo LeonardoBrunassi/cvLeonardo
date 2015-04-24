@@ -89,7 +89,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="kVO-GG-tKH" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Zzf-ty-s2G"/>
+                                    <segue destination="kVO-GG-tKH" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Zzf-ty-s2G"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNZ-Mf-Nic">
@@ -157,7 +157,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="WCu-zk-HJz" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="7ca-1m-OBo"/>
+                                    <segue destination="WCu-zk-HJz" kind="presentation" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="7ca-1m-OBo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-Es-ckW">
