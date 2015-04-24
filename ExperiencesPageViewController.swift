@@ -18,9 +18,9 @@ class ExperiencesPageViewController: UIViewController, UIPageViewControllerDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.pageTitles = NSArray(objects: "(Síntese de Qualificações)","(Experiência Profissional)")
+        self.pageTitles = NSArray(objects: "(Summary of Qualifications)","(Professional Experience)")
         self.pageImages = NSArray(objects: "skills","ibm_logo")
-        self.pageText = NSArray (objects: "- Banco de Dados DB2.\n\n- Programação Java.\n\n - Conhecimentos em HTML5, CCS3 e JavaScript.\n\n- Em aprendizado nas linguagens de programação Objective-C e Swift.\n\n- Pacote Office.\n\n - Inglês, CCI Marília-SP.\n\n- Ensino Médio - Colégio Cristo Rei de Marília.\n\n - Cursando Ciência da Computação, MACKENZIE-SP (Terceiro Ano).","- Desenvolvimento de uma aplicação WEB para controle de tarefas recebidas à um departamento com inserção, atualização, consulta e deleção em banco de dados utilizando a lingaguem de programação JAVA.\n\n- Suporte a instalação de DB2, Brio e Lotus Notes.\n\n- Suporte a requisição de acessos via UAT (User Administration Tool).\n\n- Desenvolvimento e testes de queries que busquem, filtrem e extraiam informações de um conjunto de dados em tabelas, gerando relatórios para serem entregues a clientes em um período específico.")
+        self.pageText = NSArray (objects: "- Database DB2.\n\n- Programming Java.\n\n - Knowledge in HTML5, CCS3 and JavaScript.\n\n- Learning programming languages Objective-C and Swift.\n\n- Office Package.\n\n - English, CCI Marília-SP.\n\n- High School - Colégio Cristo Rei de Marília.\n\n - Studying Computer Science, MACKENZIE-SP (Third Year).","- Development of a web application to control tasks received to a department with insert, update, query and database for deletion using the JAVA programming language.\n\n- Support for DB2 installation, Brio and Lotus Notes.\n\n- Support the access request in UAT (User Administration Tool).\n\n- Development and test queries that seek, filter and extract information from a set of data in tables, generating reports to be delivered to customers in a specific period.")
         
         
         
