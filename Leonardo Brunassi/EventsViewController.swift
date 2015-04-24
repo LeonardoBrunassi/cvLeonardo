@@ -15,9 +15,7 @@ class EventsViewController: UIViewController {
     @IBOutlet weak var eventsImage: UIImageView!
 
     @IBAction func backButton(sender: AnyObject) {
-        
         self.dismissViewControllerAnimated(true, completion: nil)
-        println("done")
     }
     var pageIndex: Int!
     var titleText: String!

@@ -89,7 +89,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="kVO-GG-tKH" kind="push" id="Zzf-ty-s2G"/>
+                                    <segue destination="kVO-GG-tKH" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="coverVertical" id="Zzf-ty-s2G"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNZ-Mf-Nic">
@@ -298,25 +298,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-na-nkK">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="110" id="r6w-C4-JIl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="r6w-C4-JIl"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="r6w-C4-JIl"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jv2-cE-DTC">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <constraints>
@@ -367,6 +348,50 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP2-F2-jAU">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="M0L-i2-S0d"/>
+                                    <constraint firstAttribute="height" constant="46" id="y9G-PS-Vrf"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="botaoBackDown">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="M0L-i2-S0d"/>
+                                        <exclude reference="y9G-PS-Vrf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="M0L-i2-S0d"/>
+                                        <include reference="y9G-PS-Vrf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="backDownButton:" destination="BZ3-qI-tEa" eventType="touchUpInside" id="mi9-I6-d5g"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNj-na-nkK">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="r6w-C4-JIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="r6w-C4-JIl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="r6w-C4-JIl"/>
+                                    </mask>
+                                </variation>
+                            </label>
                         </subviews>
                         <constraints>
                             <constraint firstItem="IKT-1D-gbM" firstAttribute="leading" secondItem="m1q-oF-SEr" secondAttribute="leadingMargin" id="7i6-06-hJe"/>
@@ -378,24 +403,33 @@
                                 <variation key="widthClass=compact" constant="16"/>
                             </constraint>
                             <constraint firstItem="YAT-OQ-7gs" firstAttribute="top" secondItem="IKT-1D-gbM" secondAttribute="bottom" constant="8" symbolic="YES" id="SzI-C0-SzN">
-                                <variation key="widthClass=compact" constant="8"/>
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="jv2-cE-DTC" firstAttribute="leading" secondItem="aP2-F2-jAU" secondAttribute="trailing" constant="35" id="emd-GV-QnN">
+                                <variation key="widthClass=compact" constant="34"/>
                             </constraint>
                             <constraint firstItem="jv2-cE-DTC" firstAttribute="top" secondItem="KnK-wW-ZUr" secondAttribute="bottom" constant="70" id="etA-6d-MEG">
-                                <variation key="widthClass=compact" constant="20"/>
+                                <variation key="widthClass=compact" constant="49"/>
+                            </constraint>
+                            <constraint firstItem="aP2-F2-jAU" firstAttribute="centerY" secondItem="jv2-cE-DTC" secondAttribute="centerY" id="i7b-67-O6J">
+                                <variation key="widthClass=compact" constant="-63"/>
                             </constraint>
                             <constraint firstItem="pNj-na-nkK" firstAttribute="top" secondItem="jv2-cE-DTC" secondAttribute="bottom" constant="17" id="oVx-Jm-bE5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="pNj-na-nkK"/>
                                 <exclude reference="jv2-cE-DTC"/>
                                 <exclude reference="JjO-Xj-egu"/>
                                 <exclude reference="IKT-1D-gbM"/>
+                                <exclude reference="aP2-F2-jAU"/>
+                                <exclude reference="pNj-na-nkK"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="MgJ-Rp-bWr"/>
                                 <exclude reference="oVx-Jm-bE5"/>
+                                <exclude reference="i7b-67-O6J"/>
                                 <exclude reference="Jzf-nU-Ajw"/>
+                                <exclude reference="emd-GV-QnN"/>
                                 <exclude reference="etA-6d-MEG"/>
                                 <exclude reference="7i6-06-hJe"/>
                                 <exclude reference="Jfz-LC-pdi"/>
@@ -406,15 +440,18 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <exclude reference="pNj-na-nkK"/>
                                 <include reference="jv2-cE-DTC"/>
                                 <include reference="JjO-Xj-egu"/>
                                 <include reference="IKT-1D-gbM"/>
+                                <include reference="aP2-F2-jAU"/>
+                                <exclude reference="pNj-na-nkK"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="MgJ-Rp-bWr"/>
                                 <include reference="oVx-Jm-bE5"/>
+                                <include reference="i7b-67-O6J"/>
                                 <include reference="Jzf-nU-Ajw"/>
+                                <include reference="emd-GV-QnN"/>
                                 <include reference="etA-6d-MEG"/>
                                 <include reference="7i6-06-hJe"/>
                                 <include reference="Jfz-LC-pdi"/>
@@ -502,15 +539,15 @@
                                     <outletCollection property="gestureRecognizers" destination="Ztb-O9-6uv" appends="YES" id="3I1-HF-Xor"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o10-c9-xDh">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o10-c9-xDh">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
-                                <state key="normal" title="&lt;">
+                                <state key="normal" title="&lt;" image="botaoBack">
                                     <color key="titleColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="28" width="63" height="36"/>
+                                    <rect key="frame" x="16" y="28" width="46" height="46"/>
                                 </variation>
                                 <connections>
                                     <action selector="backButton:" destination="hrS-XD-soV" eventType="touchUpInside" id="QoP-Ma-zug"/>
@@ -726,6 +763,8 @@
     <resources>
         <image name="Leo Perfil" width="290" height="290"/>
         <image name="Xcode Icone" width="116" height="106"/>
+        <image name="botaoBack" width="346" height="360"/>
+        <image name="botaoBackDown" width="360" height="346"/>
         <image name="eventos" width="1000" height="820"/>
         <image name="wwdc" width="383" height="130"/>
     </resources>

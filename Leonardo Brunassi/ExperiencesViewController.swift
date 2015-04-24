@@ -10,6 +10,9 @@ import UIKit
 
 class ExperiencesViewController: UIViewController {
     
+    @IBAction func backDownButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     @IBOutlet weak var companyLogo: UIImageView!
     @IBOutlet weak var companyName: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
