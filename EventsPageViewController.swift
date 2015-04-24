@@ -24,6 +24,24 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         
         
         
+        //Background Gradient.
+        let topColor = UIColor (red: (219/255.0), green: (39/255.0), blue: (29/255.0), alpha: 1)
+        let bottomColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
+        let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
+        let gradientLocations: [Float] = [0.0, 1.0]
+        
+        let gradientLayer: CAGradientLayer = CAGradientLayer()
+        gradientLayer.colors = gradientColors
+        gradientLayer.locations = gradientLocations
+        
+        gradientLayer.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradientLayer, atIndex: 0)
+        
+        
+        
+        
+        
+        
         //self.pageTitles = NSArray(objects: "IT4CIO", "ITMIDIA", "GARTNER")
         self.pageImages = NSArray(objects: "it4cio", "itmidia", "gartner")
         self.pageEventsImage = NSArray (objects: "it4CIO2014", "itMidia2014", "gartner2014")
@@ -40,7 +58,6 @@ class EventsPageViewController: UIViewController, UIPageViewControllerDataSource
         pageControl.pageIndicatorTintColor = UIColor.blackColor()
         pageControl.currentPageIndicatorTintColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
 
-        
         var startVC = self.viewControllerAtIndex(0) as EventsViewController
         var viewControllers = NSArray (object: startVC)
         

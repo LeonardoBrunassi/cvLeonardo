@@ -157,7 +157,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="WCu-zk-HJz" kind="push" id="7ca-1m-OBo"/>
+                                    <segue destination="WCu-zk-HJz" kind="modal" modalPresentationStyle="pageSheet" modalTransitionStyle="flipHorizontal" id="7ca-1m-OBo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Events" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8j6-Es-ckW">
@@ -502,6 +502,20 @@
                                     <outletCollection property="gestureRecognizers" destination="Ztb-O9-6uv" appends="YES" id="3I1-HF-Xor"/>
                                 </connections>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o10-c9-xDh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                <state key="normal" title="&lt;">
+                                    <color key="titleColor" red="1" green="1" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="28" width="63" height="36"/>
+                                </variation>
+                                <connections>
+                                    <action selector="backButton:" destination="hrS-XD-soV" eventType="touchUpInside" id="QoP-Ma-zug"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -527,6 +541,7 @@
                             <mask key="subviews">
                                 <exclude reference="j81-r6-iFk"/>
                                 <exclude reference="BpI-jp-Z4O"/>
+                                <exclude reference="o10-c9-xDh"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="1UK-jn-vUD"/>
@@ -545,6 +560,7 @@
                             <mask key="subviews">
                                 <include reference="j81-r6-iFk"/>
                                 <include reference="BpI-jp-Z4O"/>
+                                <include reference="o10-c9-xDh"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="1UK-jn-vUD"/>
@@ -573,7 +589,7 @@
                     </connections>
                 </pinchGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2742" y="1983"/>
+            <point key="canvasLocation" x="2728.5" y="1983"/>
         </scene>
         <!--Experiences Page View Controller-->
         <scene sceneID="clK-4m-8c4">
