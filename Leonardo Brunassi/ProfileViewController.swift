@@ -10,10 +10,14 @@ import UIKit
 
 class profileViewController: UIViewController {
 
+    @IBOutlet weak var aboutMeLabel: UILabel!
     
     @IBOutlet weak var textAboutMeLabel: UILabel!
     
     
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +38,10 @@ class profileViewController: UIViewController {
         textAboutMeLabel.text = "My name is Leonardo Brunassi, I'm 22 years old and I'm from Marília-SP. Currently I live at São Paulo city and I'm studying the fifth semester of computer science at Mackenzie Presbyterian University.\n\nI came to São Paulo, because job opportunities are much greater, there are excellent universities and great courses and it's very important do my knowledge and professional life.\n\nI've been learning a lot from the experiences that I have spent, especially of living alone because it was something that made me grow and mature.\n\nI have hobbies like playing cards with friends, watching movies and going out on the weekend. I often go back to my hometown at least twice a month to visit my parents and my brother.\n\nI dream of traveling abroad to work, know different cultures, improve my English and have new experiences."
         
         textAboutMeLabel.font = UIFont (name: "TimesNewRomanPSMT", size: 17)
+        aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 28)
+        
         textAboutMeLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        aboutMeLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
 
         // Do any additional setup after loading the view.
     }

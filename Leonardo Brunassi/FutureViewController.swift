@@ -10,8 +10,25 @@ import UIKit
 
 class FutureViewController: UIViewController {
 
+    @IBAction func backButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBOutlet weak var futureLabel: UILabel!
+    @IBOutlet weak var aboutMyFutureLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Defigindo uma cor para as labels.
+
+        futureLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        aboutMyFutureLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        
+        //Definindo uma font para as labels.
+        futureLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 28)
+        aboutMyFutureLabel.font = UIFont (name: "TimesNewRomanPS", size: 17)
+        
         
         
         //Background Gradient.

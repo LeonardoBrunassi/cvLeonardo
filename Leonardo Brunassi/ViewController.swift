@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var futureLabel: UILabel!
     @IBOutlet weak var imageEvents: UIButton!
     @IBOutlet weak var eventsLabel: UILabel!
+    @IBOutlet weak var myNameLabel: UILabel!
     
     
     override func viewDidLoad() {
@@ -43,19 +44,20 @@ class ViewController: UIViewController {
         //self.navigationController?.interactivePopGestureRecognizer.enabled = false
         // Do any additional setup after loading the view, typically from a nib.
         
-        navigationController?.navigationBar.barTintColor = UIColor (red: 245, green: 245, blue: 245, alpha: 1)
         
         //Defigindo uma cor para as labels.
         aboutMeLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         experiencesLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         futureLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
         eventsLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
-
+        myNameLabel.textColor = UIColor (red: 255, green: 255, blue: 254, alpha: 1)
+        
         //Definindo uma font para as labels.
         aboutMeLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         experiencesLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         futureLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
         eventsLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 17)
+        myNameLabel.font = UIFont (name: "TimesNewRomanPS-BoldMT", size: 23)
         
         //Deixando a imagem de perfil redonda.
         imageProfile.layer.borderColor = UIColor.whiteColor().CGColor
