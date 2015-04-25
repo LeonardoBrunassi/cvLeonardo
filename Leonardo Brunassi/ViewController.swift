@@ -29,10 +29,7 @@ class ViewController: UIViewController {
         let bottomColor = UIColor (red: (255/255.0), green: (99/255.0), blue: (71/255.0), alpha: 1)
         let gradientColors: [CGColor] = [topColor.CGColor, bottomColor.CGColor]
         let gradientLocations: [Float] = [0.0, 1.0]
-        
-        //self.navigationController?.navigationBar.barTintColor = UIColor.redColor()
-        //self.navigationController?.navigationBar.tintColor = UIColor.redColor()
-        //self.navigationController?.navigationBar.backgroundColor = UIColor.redColor()
+
         
         let gradientLayer: CAGradientLayer = CAGradientLayer()
         gradientLayer.colors = gradientColors
